@@ -5,37 +5,31 @@
 @section('content')
 <div class="container my-5">
     <h1>Dc Comics</h1>
-    <!-- On tables -->
-    <table class="table-primary">...</table>
-    <table class="table-secondary">...</table>
-    <table class="table-success">...</table>
-    <table class="table-danger">...</table>
-    <table class="table-warning">...</table>
-    <table class="table-info">...</table>
-    <table class="table-light">...</table>
-    <table class="table-dark">...</table>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Titolo</th>
+            <th scope="col">Serie</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Descrizione</th>
+            <th scope="col">Data di uscita</th>
+            <th scope="col">Prezzo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <!-- On rows -->
-    <tr class="table-primary">...</tr>
-    <tr class="table-secondary">...</tr>
-    <tr class="table-success">...</tr>
-    <tr class="table-danger">...</tr>
-    <tr class="table-warning">...</tr>
-    <tr class="table-info">...</tr>
-    <tr class="table-light">...</tr>
-    <tr class="table-dark">...</tr>
-
-    <!-- On cells (`td` or `th`) -->
-    <tr>
-    <td class="table-primary">...</td>
-    <td class="table-secondary">...</td>
-    <td class="table-success">...</td>
-    <td class="table-danger">...</td>
-    <td class="table-warning">...</td>
-    <td class="table-info">...</td>
-    <td class="table-light">...</td>
-    <td class="table-dark">...</td>
-    </tr>
 </div>
 
 @endsection
