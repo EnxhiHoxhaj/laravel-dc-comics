@@ -1,17 +1,41 @@
 {{-- questa view estende il file main.blade.php che è dentro la cartella view/layouts --}}
 @extends('layouts.main')
 
-@section('hero')
-    <div>HOME</div>
-@endsection
 
 @section('content')
 <div class="container my-5">
-    <h1>Titolo</h1>
-    <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit dolor recusandae nobis nulla vero, culpa odit blanditiis autem numquam laudantium consectetur dolorum illo quam nisi cumque eius. Iusto, nulla.
-    </p>
+    <h1>Dc Comics</h1>
+    <!-- On tables -->
+    <table class="table-primary">...</table>
+    <table class="table-secondary">...</table>
+    <table class="table-success">...</table>
+    <table class="table-danger">...</table>
+    <table class="table-warning">...</table>
+    <table class="table-info">...</table>
+    <table class="table-light">...</table>
+    <table class="table-dark">...</table>
+
+    <!-- On rows -->
+    <tr class="table-primary">...</tr>
+    <tr class="table-secondary">...</tr>
+    <tr class="table-success">...</tr>
+    <tr class="table-danger">...</tr>
+    <tr class="table-warning">...</tr>
+    <tr class="table-info">...</tr>
+    <tr class="table-light">...</tr>
+    <tr class="table-dark">...</tr>
+
+    <!-- On cells (`td` or `th`) -->
+    <tr>
+    <td class="table-primary">...</td>
+    <td class="table-secondary">...</td>
+    <td class="table-success">...</td>
+    <td class="table-danger">...</td>
+    <td class="table-warning">...</td>
+    <td class="table-info">...</td>
+    <td class="table-light">...</td>
+    <td class="table-dark">...</td>
+    </tr>
 </div>
 
 @endsection
