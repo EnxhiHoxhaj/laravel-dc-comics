@@ -18,5 +18,5 @@
 
 
 @section('titlePage')
-    home
+    Home
 @endsection
