@@ -55,4 +55,19 @@ i {
     text-align: center;
 }
 
+.show {
+    justify-content: center;
+}
+
+.btn {
+    background-color: white;
+    border-color: rgb(243, 158, 0);
+    color: rgb(243, 158, 0);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(243, 158, 0);
+    border: transparent;
+}
 
