@@ -10,9 +10,9 @@
                 <h4 class="card-title">{{ $comics->title }}</h4>
                 <h5 class="card-text">{{ $comics->type }}</h5>
                 <p class="card-text">{{ $comics->description }}</p>
-                <p class="card-text">{{ $comics->series }}</p>
-                <p class="card-text">{{ $comics->sale_data }}</p>
-                <p class="card-text">{{ $comics->price }} €</p>
+                <p class="card-text"><i class="fa-solid fa-arrow-right"></i> {{ $comics->series }}</p>
+                <p class="card-text"><i class="fa-solid fa-arrow-right"></i> {{ $comics->sale_date }}</p>
+                <h5 class="card-text">{{ $comics->price }} €</h5>
                 <a href="{{ route('dc_comics.index', $comics) }}" class="btn btn-primary">Indietro</a>
             </div>
         </div>
