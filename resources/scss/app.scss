@@ -12,3 +12,20 @@ body {
 .navb {
     background-color: whitesmoke;
 }
+td img {
+width: 100%;
+}
+
+th, td {
+border-right: solid lightgray 0.01px ;
+}
+
+tbody {
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(243, 158, 0);
+    font-size: 80px;
+    margin-bottom: 35px;
+}
