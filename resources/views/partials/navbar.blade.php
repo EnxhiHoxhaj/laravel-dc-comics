@@ -4,6 +4,7 @@
             <div class="navbar-nav">
                 <a class="nav-link" href="{{ route('home') }}">Home</a>
                 <a class="nav-link" href="{{ route('dc_comics.index') }}">Comics in uscita</a>
+                <a class="nav-link" href="{{ route('dc_comics.create') }}">Nuovi prodotti</a>
             </div>
         </div>
     </div>
