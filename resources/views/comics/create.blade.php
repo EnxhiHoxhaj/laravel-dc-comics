@@ -8,26 +8,28 @@
 @section('content')
     <div class="container my-5">
         <h1>Inserimento nuovi prodotti</h1>
-        <form action="#" method="GET" class="row g-3 needs-validation" novalidate>
+        <form action="{{ route('dc_comics.store') }}" method="POST" class="row g-3 needs-validation" novalidate>
+            @csrf
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Copertina</label>
-                <input type="image" class="form-control" id="validationCustom02" value="http://..." required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="http://..." required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Titolo</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Batman & Robin" required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Serie</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Le avventure di Batman" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Le avventure di Batman"
+                    required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Tipo</label>
-                <input type="text" class="form-control" id="validationCustom02" value="comics" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="comics" required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Data di uscita</label>
-                <input type="date" class="form-control" id="validationCustom02" value="24-04-1978" required>
+                <input type="date" class="form-control" id="validationCustom02" required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Prezzo</label>
