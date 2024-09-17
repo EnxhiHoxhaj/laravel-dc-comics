@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('dc_comics', function (Blueprint $table) {
             $table->id();
+            $table->string('img');
             $table->string('title');
             $table->text('description', 150);
             $table->decimal('price', total: 8, places: 2);

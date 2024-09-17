@@ -15,14 +15,16 @@ class DcComicSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        for($i = 0; $i < 10; $i++){
+        $arr_comics= config('dc_comics');
+        foreach($arr_comics as $data_comic){
             $comic= new DcComics();
-            $comic->title = $faker->randomElement(["Action Comics #1000: The Deluxe Edition", "American Vampire 1976 #1", "Batgirl #1", "Batman #56", "Batman Beyond #1", "Batman/Superman #1", "Batman/Superman Annual #1", "Batman: The Joker War Zone #1", "Batman: Three Jokers #1", "Batman: White Knight Presents: Harley Quinn #1", "Catwoman Vol. 1: Copycats"]);
-            $comic->description = $faker->words(20, true);
-            $comic->price = $faker->randomFloat(2, 5, 15);
-            $comic->series = $faker->randomElement(["Action Comics", "Aquaman", "Batgirls", "Batman", "Batman Beyond", "Batman/Superman", "Batman: The Joker,War Zone", "Catwoman"]);
-            $comic->sale_date = $faker->date('Y-m-d');
-            $comic->type = $faker->randomElement(["graphic novel", "comic book"]);
+            $comic->img = $data_comic['thumb'];
+            $comic->title = $data_comic['title'];
+            $comic->description = $data_comic['description'];
+            $comic->price = floatval(str_replace('$', '', $data_comic['price']));
+            $comic->series = $data_comic['series'];
+            $comic->sale_date = $data_comic['sale_date'];
+            $comic->type = $data_comic['type'];
             $comic->save();
         }
     }
