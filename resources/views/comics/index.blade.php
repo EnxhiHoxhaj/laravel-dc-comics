@@ -19,6 +19,7 @@
                     <th scope="col">Descrizione</th>
                     <th scope="col">Data di uscita</th>
                     <th scope="col">Prezzo</th>
+                    <th scope="col">Show more</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,9 +32,10 @@
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->type }}</td>
-                        <td>{{ $comic->description }}</td>
+                        <td class="des">{{ $comic->description }}</td>
                         <td>{{ $comic->sale_date }}</td>
-                        <td>{{ $comic->price }} €</td>
+                        <td class="pri">{{ $comic->price }} €</td>
+                        <td class="icon"><a href="#"><i class="fa-solid fa-eye"></i></a></td>
                     </tr>
                 @endforeach
             </tbody>

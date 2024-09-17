@@ -17,12 +17,4 @@ use App\Http\Controllers\ComicController;
 
 Route::get('/', [PageController:: class, 'index'])->name('home');
 
-Route::get('/chi-siamo', function () {
-    return view('about');
-})->name('about');
-
-Route::get('/contatti', function () {
-    return view('contacts');
-})->name('contacts');
-
 Route::resource('dc_comics', ComicController::class);
