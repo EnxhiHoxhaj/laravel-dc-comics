@@ -35,7 +35,8 @@
                         <td class="des">{{ $comic->description }}</td>
                         <td>{{ $comic->sale_date }}</td>
                         <td class="pri">{{ $comic->price }} €</td>
-                        <td class="icon"><a href="#"><i class="fa-solid fa-eye"></i></a></td>
+                        <td class="icon"><a href="{{ route('dc_comics.show', $comic) }}"><i
+                                    class="fa-solid fa-eye"></i></a></td>
                     </tr>
                 @endforeach
             </tbody>
