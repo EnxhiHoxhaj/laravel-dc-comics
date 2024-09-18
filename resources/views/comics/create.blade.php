@@ -12,28 +12,32 @@
             @csrf
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Copertina</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="http://..." required>
+                <input type="text" class="form-control" id="validationCustom02" name="img" placeholder="http://..."
+                    required>
             </div>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Titolo</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required
+                    name="title">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Serie</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Le avventure di Batman"
-                    required>
+                    required name="series">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Tipo</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="comics" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="comics" required
+                    name="type">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Data di uscita</label>
-                <input type="date" class="form-control" id="validationCustom02" required>
+                <input type="date" class="form-control" id="validationCustom02" required name="sale_date">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Prezzo</label>
-                <input type="text" class="form-control" id="validationCustom02" value="9.99" required>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="9.99" required
+                    name="price">
             </div>
             <div class="col-12">
                 <button class="btn btn-primary" type="submit">Submit form</button>
