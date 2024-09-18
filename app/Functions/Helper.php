@@ -19,7 +19,7 @@ class Helper {
 
         while($exists){
             $slug = $original_slug . '-' . $c;
-            $exists = Pasta::where('slug', $slug)->first();
+            $exists = $model::where('slug', $slug)->first();
             $c++;
         }
 
