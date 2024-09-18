@@ -9,4 +9,16 @@ class DcComics extends Model
 {
     use HasFactory;
     public $timestamps = false;
+
+    protected $fillable = [
+        'img',
+        'title',
+        'description',
+        'price',
+        'series',
+        'sale_date',
+        'type',
+        'slug',
+
+    ];
 }
