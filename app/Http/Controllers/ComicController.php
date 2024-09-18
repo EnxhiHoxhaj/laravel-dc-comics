@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\DcComics;
 use Illuminate\Http\Request;
+use App\Functions\Helper;
 
 class ComicController extends Controller
 {
@@ -34,12 +35,15 @@ class ComicController extends Controller
         $new_comic = new DcComics();
         $new_comic->img = $data['img'];
         $new_comic->title = $data['title'];
+        $new_comic->slug = Helper::generateSlug($new_comic->title, DcComics::class);
         $new_comic->description = $data['description'];
         $new_comic->price = floatval(str_replace('$', '', $data['price']));
         $new_comic->series = $data['series'];
         $new_comic->sale_date = $data['sale_date'];
         $new_comic->type = $data['type'];
         $new_comic->save();
+
+        return redirect()->route('dc_comics.show', $new_comic->id);
     }
 
     /**
