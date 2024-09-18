@@ -20,6 +20,7 @@
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required
                     name="title">
             </div>
+
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Serie</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Le avventure di Batman"
@@ -39,7 +40,14 @@
                 <input type="text" class="form-control" id="validationCustom02" placeholder="9.99" required
                     name="price">
             </div>
-            <div class="col-12">
+            <div class="col-md-12">
+                <label for="validationCustom02" class="form-label">Descrizione</label>
+                <textarea class="form-control" name="description" id="validationCustom02" cols="30" rows="10"
+                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit..." name="description">
+
+                </textarea>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
         </form>
