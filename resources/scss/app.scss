@@ -64,13 +64,14 @@ i {
 
 .btn {
     background-color: white;
-    border-color: rgb(243, 158, 0);
+    border: solid rgb(243, 158, 0) 2px;
     color: rgb(243, 158, 0);
+    transition: border-color 0.5s, color 0.5s, background-color 0.5s;
 }
 
 .btn:hover {
     color: white;
     background-color: rgb(243, 158, 0);
-    border: transparent;
+    border-color: transparent;
 }
 
