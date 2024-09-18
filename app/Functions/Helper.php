@@ -18,7 +18,7 @@ class Helper {
         $c= 1;
 
         while($exists){
-            $slug = $original_slug . '-' . $c;
+            $slug = $original_slug.'-'.$c;
             $exists = $model::where('slug', $slug)->first();
             $c++;
         }

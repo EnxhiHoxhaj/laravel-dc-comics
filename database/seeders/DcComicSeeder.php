@@ -20,8 +20,8 @@ class DcComicSeeder extends Seeder
         foreach($arr_comics as $data_comic){
             $comic= new DcComics();
             $comic->img = $data_comic['thumb'];
-            $comic->slug = Helper::generateSlug($comic->title, DcComics);
             $comic->title = $data_comic['title'];
+            $comic->slug = Helper::generateSlug($comic->title, DcComics::class);
             $comic->description = $data_comic['description'];
             $comic->price = floatval(str_replace('$', '', $data_comic['price']));
             $comic->series = $data_comic['series'];
