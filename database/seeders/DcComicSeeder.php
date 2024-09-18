@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\DcComics;
 use Faker\Generator as Faker;
+use App\Functions\Helper;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
@@ -19,6 +20,7 @@ class DcComicSeeder extends Seeder
         foreach($arr_comics as $data_comic){
             $comic= new DcComics();
             $comic->img = $data_comic['thumb'];
+            $comic->slug = Helper::generateSlug($comic->title, DcComics);
             $comic->title = $data_comic['title'];
             $comic->description = $data_comic['description'];
             $comic->price = floatval(str_replace('$', '', $data_comic['price']));
