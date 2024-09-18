@@ -44,9 +44,12 @@ i {
     color: rgb(243, 158, 0);
     vertical-align: middle;
     padding: 5px;
+    border: solid transparent 2px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
 }
  i:hover {
-    border: solid rgb(243, 158, 0) 0.01px;
+    border: solid rgb(243, 158, 0) 2px;
     border-radius: 5px;
  }
 
