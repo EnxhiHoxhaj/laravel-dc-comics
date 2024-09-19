@@ -91,6 +91,8 @@ class ComicController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $comic = DcComics:: find($id);
+        $comic -> delete();
+        return redirect()->route('dc_comics.index');
     }
 }
