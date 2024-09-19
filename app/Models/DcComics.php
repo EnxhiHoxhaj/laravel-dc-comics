@@ -13,12 +13,12 @@ class DcComics extends Model
     protected $fillable = [
         'img',
         'title',
+        'slug',
         'description',
         'price',
         'series',
         'sale_date',
-        'type',
-        'slug',
-
+        'type'
     ];
+
 }

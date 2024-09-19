@@ -17,6 +17,7 @@
                     <th scope="col">Tipo</th>
                     <th scope="col">Data di uscita</th>
                     <th scope="col">Show more</th>
+                    <th scope="col">Modifica</th>
                 </tr>
             </thead>
             <tbody>
@@ -27,8 +28,12 @@
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->type }}</td>
                         <td>{{ $comic->sale_date }}</td>
-                        <td class="icon"><a href="{{ route('dc_comics.show', $comic) }}"><i
-                                    class="fa-solid fa-eye"></i></a></td>
+                        <td class="icon">
+                            <a href="{{ route('dc_comics.show', $comic) }}"><i class="fa-solid fa-eye"></i></a>
+                        </td>
+                        <td class="icon">
+                            <a href="{{ route('dc_comics.edit', $comic) }}"><i class="fa-solid fa-pen-to-square"></i></a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
