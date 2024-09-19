@@ -64,16 +64,18 @@ i {
     justify-content: center;
 }
 
-.btn {
+.btn, .edit i {
     background-color: white;
     border: solid rgb(243, 158, 0) 2px;
     color: rgb(243, 158, 0);
     transition: border-color 0.5s, color 0.5s, background-color 0.5s;
+    border-radius: 5px;
 }
 
-.btn:hover {
+.btn:hover{
     color: white;
     background-color: rgb(243, 158, 0);
     border-color: transparent;
 }
+
 

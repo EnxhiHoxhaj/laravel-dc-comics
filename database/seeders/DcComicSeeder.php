@@ -14,7 +14,7 @@ class DcComicSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    public function run(Faker $faker): void
+    public function run(): void
     {
         $arr_comics= config('dc_comics');
         foreach($arr_comics as $data_comic){

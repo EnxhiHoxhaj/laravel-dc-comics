@@ -74,13 +74,16 @@ class ComicController extends Controller
     public function update(Request $request, string $id)
     {
         $data = $request->all();
+
         $comic= DcComics::find($id);
-        if($data['title'] == $comic->title){
+        if($data['title'] = $comic->title){
             $data ['slug']= $comic ->slug;
         } else {
             $data['slug'] = Helper::generateSlug($data['title']. DcComics::class);
         }
-        dump($data);
+
+        $comic->update($data);
+        return redirect()->route('dc_comics.show', $comic);
     }
 
     /**
