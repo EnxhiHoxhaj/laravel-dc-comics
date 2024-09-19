@@ -37,7 +37,8 @@
                         </td>
 
                         <td class="icon">
-                            <form action="{{ route('dc_comics.destroy', $comic) }}" method="POST">
+                            <form action="{{ route('dc_comics.destroy', $comic) }}" method="POST"
+                                onsubmit="return confirm('Sei sicuro di voler eliminare dalla tua lista {{ $comic->title }}')">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit"><i class="fa-solid fa-trash"></i></button>
