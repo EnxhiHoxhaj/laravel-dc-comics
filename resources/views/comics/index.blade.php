@@ -18,6 +18,7 @@
                     <th scope="col">Data di uscita</th>
                     <th scope="col">Show more</th>
                     <th scope="col">Modifica</th>
+                    <th scope="col">Elimina</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,6 +35,15 @@
                         <td class="icon">
                             <a href="{{ route('dc_comics.edit', $comic) }}"><i class="fa-solid fa-pen-to-square"></i></a>
                         </td>
+
+                        <td class="icon">
+                            <form action="{{ route('dc_comics.destroy', $comic) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit"><i class="fa-solid fa-trash"></i></button>
+                            </form>
+                        </td>
+
                     </tr>
                 @endforeach
             </tbody>
