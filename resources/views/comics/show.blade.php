@@ -13,7 +13,7 @@
                 <p class="card-text"><i class="fa-solid fa-arrow-right"></i> {{ $comics->type }}</p>
                 <p class="card-text"><i class="fa-solid fa-arrow-right"></i> {{ $comics->sale_date }}</p>
                 <h5 class="card-text">{{ $comics->price }} €</h5>
-                <a href="{{ route('dc_comics.index', $comics) }}" class="btn btn-primary">Indietro</a>
+                <a href="{{ route('dc_comics.index', $comics) }}" class="btn btn-primary">Torna al catalogo</a>
                 <a class="edit" href="{{ route('dc_comics.edit', $comics) }}"><i
                         class="fa-solid fa-pen-to-square"></i></a>
 

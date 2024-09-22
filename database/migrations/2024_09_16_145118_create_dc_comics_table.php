@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('img');
             $table->string('title');
             $table->string('slug');
-            $table->text('description', 150);
+            $table->text('description', 350);
             $table->decimal('price', total: 8, places: 2);
             $table->string('series');
-            $table->date('sale_date', 80);
-            $table->string('type', 50);
+            $table->date('sale_date');
+            $table->string('type', 15);
             $table->timestamps();
         });
     }

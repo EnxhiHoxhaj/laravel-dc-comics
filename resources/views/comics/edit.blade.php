@@ -19,7 +19,7 @@
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Titolo</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required
-                    name="title" value="{{ $edit_comic->title }}">
+                    name="title" value="{{ old($edit_comic->title) }}">
             </div>
 
             <div class="col-md-4">
