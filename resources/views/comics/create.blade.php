@@ -88,6 +88,7 @@
             <div class="col-12 d-flex justify-content-center">
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
+
         </form>
     </div>
 @endsection
