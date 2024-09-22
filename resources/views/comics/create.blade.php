@@ -28,38 +28,39 @@
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Copertina</label>
                 <input type="text" class="form-control" id="validationCustom02" name="img" placeholder="http://..."
-                    required>
+                    required value="{{ old('img') }}">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Titolo</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Batman & Robin" required
-                    name="title">
+                    name="title" value="{{ old('title') }}">
             </div>
 
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Serie</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="Le avventure di Batman"
-                    required name="series">
+                    required name="series" value="{{ old('series') }}">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Tipo</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="comics" required
-                    name="type">
+                    name="type" value="{{ old('type') }}">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Data di uscita</label>
-                <input type="date" class="form-control" id="validationCustom02" required name="sale_date">
+                <input type="date" class="form-control" id="validationCustom02" required name="sale_date"
+                    value="{{ old('date') }}">
             </div>
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Prezzo</label>
                 <input type="text" class="form-control" id="validationCustom02" placeholder="9.99" required
-                    name="price">
+                    name="price" value="{{ old('price') }}">
             </div>
             <div class="col-md-12">
                 <label for="validationCustom02" class="form-label">Descrizione</label>
                 <textarea class="form-control" name="description" id="validationCustom02" cols="30" rows="10"
-                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit..." name="description">
-
+                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit..." name="description"
+                    value="{{ old('description') }}">
                 </textarea>
             </div>
             <div class="col-12 d-flex justify-content-center">
