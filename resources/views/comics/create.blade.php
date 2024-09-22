@@ -7,9 +7,19 @@
 
 @section('content')
     <div class="container my-5">
+
         <h1>Inserimento nuovi prodotti</h1>
+
+        @if ($errors->any())
+            <div class="alert alert-danger" role="alert">
+                errori...
+            </div>
+        @endif
+
         <form action="{{ route('dc_comics.store') }}" method="POST" class="row g-3 needs-validation" novalidate>
+
             @csrf
+
             <div class="col-md-4">
                 <label for="validationCustom02" class="form-label">Copertina</label>
                 <input type="text" class="form-control" id="validationCustom02" name="img" placeholder="http://..."
